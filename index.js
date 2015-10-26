@@ -17,7 +17,7 @@ module.exports = function (config, request) {
         }
         var url = config[req.host]
         if (url) {
-            res.send(req.host + "not in the configuration")
+            res.send(req.host + " not in the configuration")
         }
         proxy.web(req, res, { target: url });
     })
